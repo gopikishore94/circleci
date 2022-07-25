@@ -12,6 +12,10 @@ master_only: &master_only
     branches:
       only:
         - master
+dev_only: &dev_only
+  filters:
+    branches:
+      only:
         - dev
 jobs:
   build:
