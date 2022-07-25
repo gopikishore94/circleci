@@ -21,9 +21,6 @@ workflows:
   build_test_deploy: # this can be any name you choose
     jobs:
       - build
-      - deploy:
-          requires:
-            - build # only deploy if the build_and_test job has completed
           filters:
             branches:
               only: main
