@@ -31,7 +31,8 @@ workflows:
   build_test: # this can be any name you choose
     jobs:
       - build:
-         <<: *dev_only
+         #<<: *dev_only
+         <<: *master_only
           # filters:
           #   branches:
           #     only: master
